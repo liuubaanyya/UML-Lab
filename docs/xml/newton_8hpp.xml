@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="newton_8hpp" kind="file" language="C++">
+    <compoundname>newton.hpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="basic__functions_8h" local="yes">../basic_functions.h</includes>
+    <includedby refid="newton_8cpp" local="yes">matrix/newton/newton.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>../basic_functions.h</label>
+        <link refid="basic__functions_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>matrix/newton/newton.hpp</label>
+        <link refid="newton_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classNewtonINversion" prot="public">NewtonINversion</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../basic_functions.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classNewtonINversion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNewtonINversion" kindref="compound">NewtonINversion</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/><ref refid="classNewtonINversion_1aded351e9e58ff675ce8ad7d6795182dd" kindref="member">inverse</ref>(<ref refid="classrealValued" kindref="compound">realValued</ref><sp/>A,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>epsilon);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isValid(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;A);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>multiplyMatrixByNumber(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;A,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>getAverageSum(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;E);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>getUnitMatrix(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>getMaxRowSum(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;A);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>getMaxColumnSum(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;A);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSquare(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;m);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="matrix/newton/newton.hpp"/>
+  </compounddef>
+</doxygen>

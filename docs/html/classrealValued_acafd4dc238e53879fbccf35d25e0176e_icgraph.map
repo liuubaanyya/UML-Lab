@@ -1,0 +1,4 @@
+<map id="realValued::collect" name="realValued::collect">
+<area shape="rect" id="node1" title="Collects 4 submatrices to form a larger matrix. This method takes four realValued matrices (c11,..." alt="" coords="216,37,359,63"/>
+<area shape="rect" id="node2" href="$classrealValued.html#ae8b3cc8045c8b37e7a1ab35aa41d820b" title="Implements Strassen&#39;s algorithm for multiplying two real&#45;valued matrices. This function uses Strassen..." alt="" coords="5,29,168,71"/>
+</map>

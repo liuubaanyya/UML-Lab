@@ -1,0 +1,4 @@
+<map id="realValued::Strassen_multiplication" name="realValued::Strassen_multiplication">
+<area shape="rect" id="node1" title="Performs matrix multiplication using the Strassen algorithm. This function performs matrix multiplica..." alt="" coords="244,5,399,47"/>
+<area shape="rect" id="node2" href="$classNewtonINversion.html#aded351e9e58ff675ce8ad7d6795182dd" title="Calculates the inverse of a given real&#45;valued matrix using the iterative method of finding the invers..." alt="" coords="5,13,196,39"/>
+</map>

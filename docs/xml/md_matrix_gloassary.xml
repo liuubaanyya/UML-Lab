@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md_matrix_gloassary" kind="page">
+    <compoundname>md_matrix_gloassary</compoundname>
+    <title>gloassary</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="md_matrix_gloassary_1GLOSSARY_ISR">
+<title>GLOSSARY_ISR</title>
+<para>Matrix: <ulink url="https://en.wikipedia.org/wiki/Matrix_(mathematics)">https://en.wikipedia.org/wiki/Matrix_(mathematics)</ulink> Matrix inversion: <ulink url="https://en.wikipedia.org/wiki/Invertible_matrix">https://en.wikipedia.org/wiki/Invertible_matrix</ulink> Matrix multiplication: <ulink url="https://en.wikipedia.org/wiki/Matrix_multiplication">https://en.wikipedia.org/wiki/Matrix_multiplication</ulink> <ref refid="classrealValued" kindref="compound">realValued</ref>: matrix consist of real-valued numbers Newton inversion:More known as a &quot;Newton iterations for a matrix inversion&quot; <ulink url="https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=9269&amp;context=etd">https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=9269&amp;context=etd</ulink> Gausian inversion: <ulink url="https://en.wikipedia.org/wiki/Gaussian_elimination">https://en.wikipedia.org/wiki/Gaussian_elimination</ulink> Strassen (fast) multiplication: <ulink url="https://en.wikipedia.org/wiki/Strassen_algorithm">https://en.wikipedia.org/wiki/Strassen_algorithm</ulink> </para>
+</sect1>
+    </detaileddescription>
+    <location file="matrix/gloassary.md"/>
+  </compounddef>
+</doxygen>

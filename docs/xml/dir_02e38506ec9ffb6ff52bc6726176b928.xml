@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_02e38506ec9ffb6ff52bc6726176b928" kind="dir">
+    <compoundname>matrix/Strassen</compoundname>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="Strassen_8h">Strassen.h</innerfile>
+    <innerfile refid="test__for__Strassen_8h">test_for_Strassen.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="matrix/Strassen/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="gloassary_8md" kind="file" language="Markdown">
+    <compoundname>gloassary.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">@section<sp/>GLOSSARY_ISR<sp/></highlight></codeline>
+<codeline><highlight class="normal">Matrix:<sp/>https://en.wikipedia.org/wiki/Matrix_(mathematics)</highlight></codeline>
+<codeline><highlight class="normal">Matrix<sp/>inversion:<sp/>https://en.wikipedia.org/wiki/Invertible_matrix</highlight></codeline>
+<codeline><highlight class="normal">Matrix<sp/>multiplication:<sp/>https://en.wikipedia.org/wiki/Matrix_multiplication</highlight></codeline>
+<codeline><highlight class="normal">realValued:<sp/>matrix<sp/>consist<sp/>of<sp/>real-valued<sp/>numbers</highlight></codeline>
+<codeline><highlight class="normal">Newton<sp/>inversion:More<sp/>known<sp/>as<sp/>a<sp/>&quot;Newton<sp/>iterations<sp/>for<sp/>a<sp/>matrix<sp/>inversion&quot;<sp/>https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=9269&amp;context=etd</highlight></codeline>
+<codeline><highlight class="normal">Gausian<sp/>inversion:<sp/>https://en.wikipedia.org/wiki/Gaussian_elimination</highlight></codeline>
+<codeline><highlight class="normal">Strassen<sp/>(fast)<sp/>multiplication:<sp/>https://en.wikipedia.org/wiki/Strassen_algorithm</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="matrix/gloassary.md"/>
+  </compounddef>
+</doxygen>

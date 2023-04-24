@@ -1,0 +1,4 @@
+<map id="realValued::split" name="realValued::split">
+<area shape="rect" id="node1" title="Splits a real&#45;valued matrix into four submatrices." alt="" coords="216,37,343,63"/>
+<area shape="rect" id="node2" href="$classrealValued.html#ae8b3cc8045c8b37e7a1ab35aa41d820b" title="Implements Strassen&#39;s algorithm for multiplying two real&#45;valued matrices. This function uses Strassen..." alt="" coords="5,29,168,71"/>
+</map>

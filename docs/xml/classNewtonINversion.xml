@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classNewtonINversion" kind="class" language="C++" prot="public">
+    <compoundname>NewtonINversion</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classNewtonINversion_1aded351e9e58ff675ce8ad7d6795182dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrealValued" kindref="compound">realValued</ref></type>
+        <definition>realValued NewtonINversion::inverse</definition>
+        <argsstring>(realValued A, double epsilon)</argsstring>
+        <name>inverse</name>
+        <param>
+          <type><ref refid="classrealValued" kindref="compound">realValued</ref></type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the inverse of a given real-valued matrix using the iterative method of finding the inverse. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The method involves multiplying the input matrix by a scaling factor, then repeatedly using the Strassen algorithm to update the scaling factor until a certain threshold of accuracy is reached.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input matrix to be inverted </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired threshold of accuracy for the inverse calculation</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: The inverse of the input matrix, or an empty matrix if the input matrix is invalid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/newton/newton.hpp" line="7" column="16" bodyfile="matrix/newton/newton.cpp" bodystart="41" bodyend="57"/>
+        <references refid="classrealValued_1a689a8f76b905b2a137b41ad7d52f4a90" compoundref="Strassen_8h" startline="125" endline="157">realValued::Strassen_multiplication</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classNewtonINversion_1a38f306f4af1942d2a7e49153d91b48ee" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NewtonINversion::isValid</definition>
+        <argsstring>(const realValued &amp;A)</argsstring>
+        <name>isValid</name>
+        <param>
+          <type>const <ref refid="classrealValued" kindref="compound">realValued</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>Determines if a given real-valued matrix is valid for matrix operations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A matrix is considered valid if it is non-empty and square (i.e. has the same number of rows and columns).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to be checked</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: True if the matrix is valid, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/newton/newton.hpp" line="10" column="10" bodyfile="matrix/newton/newton.cpp" bodystart="69" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classNewtonINversion_1a33ce2cea1f35dc208a6a8393352464d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrealValued" kindref="compound">realValued</ref></type>
+        <definition>realValued NewtonINversion::multiplyMatrixByNumber</definition>
+        <argsstring>(const realValued &amp;A, double val)</argsstring>
+        <name>multiplyMatrixByNumber</name>
+        <param>
+          <type>const <ref refid="classrealValued" kindref="compound">realValued</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Multiplies a given real-valued matrix by a scalar value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Each element in the matrix is multiplied by the given scalar value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to be multiplied </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scalar value to multiply by</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: The result of the matrix multiplication as a new real-valued matrix </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/newton/newton.hpp" line="12" column="16" bodyfile="matrix/newton/newton.cpp" bodystart="95" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classNewtonINversion_1a5afb008705f64a1ec3aa15a881d97dad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double NewtonINversion::getAverageSum</definition>
+        <argsstring>(const realValued &amp;E)</argsstring>
+        <name>getAverageSum</name>
+        <param>
+          <type>const <ref refid="classrealValued" kindref="compound">realValued</ref> &amp;</type>
+          <declname>E</declname>
+        </param>
+        <briefdescription>
+<para>Computes the average of the sum of all elements in a given matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function takes a real-valued matrix as input and returns the average value of the sum of all its elements.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>E</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to compute the average sum of</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: The average sum of all elements in the matrix </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/newton/newton.hpp" line="14" column="12" bodyfile="matrix/newton/newton.cpp" bodystart="115" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classNewtonINversion_1a40df59f9baeb62afc33abc53b49ac963" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrealValued" kindref="compound">realValued</ref></type>
+        <definition>realValued NewtonINversion::getUnitMatrix</definition>
+        <argsstring>(int n)</argsstring>
+        <name>getUnitMatrix</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Generates a square unit matrix of the specified size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function takes an integer n as input and returns a square unit matrix of size n x n. A unit matrix is a matrix with diagonal elements as 1 and all other elements as 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the square unit matrix to be generated. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: A square unit matrix of size n x n. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/newton/newton.hpp" line="16" column="16" bodyfile="matrix/newton/newton.cpp" bodystart="140" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classNewtonINversion_1a7fd8a83fd35a955d0d7fa52b881fa78a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double NewtonINversion::getMaxRowSum</definition>
+        <argsstring>(const realValued &amp;A)</argsstring>
+        <name>getMaxRowSum</name>
+        <param>
+          <type>const <ref refid="classrealValued" kindref="compound">realValued</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>Computes the maximum row sum of a given real-valued matrix. This function takes a real-valued matrix as input and returns the maximum sum of its rows. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to compute the maximum row sum of</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: The maximum row sum of the matrix </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/newton/newton.hpp" line="18" column="12" bodyfile="matrix/newton/newton.cpp" bodystart="157" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classNewtonINversion_1aba0e3a850f31167174ff78bb9ac51224" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double NewtonINversion::getMaxColumnSum</definition>
+        <argsstring>(const realValued &amp;A)</argsstring>
+        <name>getMaxColumnSum</name>
+        <param>
+          <type>const <ref refid="classrealValued" kindref="compound">realValued</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>Computes the maximum sum of all columns in a given real-valued matrix. This function takes a real-valued matrix as input and returns the maximum sum of all columns in the matrix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to compute the maximum sum of all columns </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: The maximum sum of all columns in the matrix </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/newton/newton.hpp" line="20" column="12" bodyfile="matrix/newton/newton.cpp" bodystart="184" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classNewtonINversion_1a51473c32e59c8c2178b2d9d26884037c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool NewtonINversion::isSquare</definition>
+        <argsstring>(const realValued &amp;m)</argsstring>
+        <name>isSquare</name>
+        <param>
+          <type>const <ref refid="classrealValued" kindref="compound">realValued</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Determines if a given real-valued matrix is square (i.e. has the same number of rows and columns). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to be checked</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: True if the matrix is square, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/newton/newton.hpp" line="22" column="10" bodyfile="matrix/newton/newton.cpp" bodystart="18" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="matrix/newton/newton.hpp" line="4" column="1" bodyfile="matrix/newton/newton.hpp" bodystart="5" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classNewtonINversion_1a5afb008705f64a1ec3aa15a881d97dad" prot="private" virt="non-virtual"><scope>NewtonINversion</scope><name>getAverageSum</name></member>
+      <member refid="classNewtonINversion_1aba0e3a850f31167174ff78bb9ac51224" prot="private" virt="non-virtual"><scope>NewtonINversion</scope><name>getMaxColumnSum</name></member>
+      <member refid="classNewtonINversion_1a7fd8a83fd35a955d0d7fa52b881fa78a" prot="private" virt="non-virtual"><scope>NewtonINversion</scope><name>getMaxRowSum</name></member>
+      <member refid="classNewtonINversion_1a40df59f9baeb62afc33abc53b49ac963" prot="private" virt="non-virtual"><scope>NewtonINversion</scope><name>getUnitMatrix</name></member>
+      <member refid="classNewtonINversion_1aded351e9e58ff675ce8ad7d6795182dd" prot="public" virt="non-virtual"><scope>NewtonINversion</scope><name>inverse</name></member>
+      <member refid="classNewtonINversion_1a51473c32e59c8c2178b2d9d26884037c" prot="private" virt="non-virtual"><scope>NewtonINversion</scope><name>isSquare</name></member>
+      <member refid="classNewtonINversion_1a38f306f4af1942d2a7e49153d91b48ee" prot="private" virt="non-virtual"><scope>NewtonINversion</scope><name>isValid</name></member>
+      <member refid="classNewtonINversion_1a33ce2cea1f35dc208a6a8393352464d7" prot="private" virt="non-virtual"><scope>NewtonINversion</scope><name>multiplyMatrixByNumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

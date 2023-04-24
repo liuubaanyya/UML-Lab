@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_109f68d84cef4a133396a0be144fa9b1" kind="dir">
+    <compoundname>matrix</compoundname>
+    <innerdir refid="dir_0f0a80c662d06490e1395bff61b1e8bb">matrix/Gaus</innerdir>
+    <innerdir refid="dir_8126c0230e7a98c98ef605d0a5c93b53">matrix/newton</innerdir>
+    <innerdir refid="dir_02e38506ec9ffb6ff52bc6726176b928">matrix/Strassen</innerdir>
+    <innerfile refid="basic__functions_8h">basic_functions.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="matrix/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classNewtonINversion" kind="class"><name>NewtonINversion</name>
+    <member refid="classNewtonINversion_1aded351e9e58ff675ce8ad7d6795182dd" kind="function"><name>inverse</name></member>
+    <member refid="classNewtonINversion_1a38f306f4af1942d2a7e49153d91b48ee" kind="function"><name>isValid</name></member>
+    <member refid="classNewtonINversion_1a33ce2cea1f35dc208a6a8393352464d7" kind="function"><name>multiplyMatrixByNumber</name></member>
+    <member refid="classNewtonINversion_1a5afb008705f64a1ec3aa15a881d97dad" kind="function"><name>getAverageSum</name></member>
+    <member refid="classNewtonINversion_1a40df59f9baeb62afc33abc53b49ac963" kind="function"><name>getUnitMatrix</name></member>
+    <member refid="classNewtonINversion_1a7fd8a83fd35a955d0d7fa52b881fa78a" kind="function"><name>getMaxRowSum</name></member>
+    <member refid="classNewtonINversion_1aba0e3a850f31167174ff78bb9ac51224" kind="function"><name>getMaxColumnSum</name></member>
+    <member refid="classNewtonINversion_1a51473c32e59c8c2178b2d9d26884037c" kind="function"><name>isSquare</name></member>
+  </compound>
+  <compound refid="classrealValued" kind="class"><name>realValued</name>
+    <member refid="classrealValued_1a25156f9aa917743745f9bed2af030d46" kind="variable"><name>Matrix</name></member>
+    <member refid="classrealValued_1a80a224cc5db83712241c8c8ba76db29c" kind="variable"><name>rows</name></member>
+    <member refid="classrealValued_1acfe468b843b4ee0b9a64eb42143a2345" kind="variable"><name>columns</name></member>
+    <member refid="classrealValued_1af58afdc8e4801feec177813272cad084" kind="function"><name>compare</name></member>
+    <member refid="classrealValued_1ac03593977dcec33bbddd7d95ff2425f7" kind="function"><name>print_matrix</name></member>
+    <member refid="classrealValued_1a650bc67341171136ab20ac5f08d585f5" kind="function"><name>correct_size_for_multiplication</name></member>
+    <member refid="classrealValued_1ae6fba0567a1d9712e41d127acc0885b2" kind="function"><name>correct_sizes</name></member>
+    <member refid="classrealValued_1a6a033fcb2636a9a82ae3cb61fd87745a" kind="function"><name>multiplication</name></member>
+    <member refid="classrealValued_1a64ff4a0416a7c02ecadc2ac70fa84b9e" kind="function"><name>addition</name></member>
+    <member refid="classrealValued_1a0ffc4a52eb869177622c85a1ae25ebfd" kind="function"><name>subtraction</name></member>
+    <member refid="classrealValued_1a8bfecd95a399740158f6cc93d1ebe0e5" kind="function"><name>expand</name></member>
+    <member refid="classrealValued_1ad32810d483fd363719bcd12731cf835a" kind="function"><name>realValued</name></member>
+    <member refid="classrealValued_1a8e0e3aeaa3b0d2c9736940480a2d9153" kind="function"><name>realValued</name></member>
+    <member refid="classrealValued_1a835ec746f0df776fe0c2a34a21d63183" kind="function"><name>realValued</name></member>
+    <member refid="classrealValued_1a5c42029d3136c989b22e06647807321b" kind="function"><name>realValued</name></member>
+    <member refid="classrealValued_1ad8a193a19c754533b609a3bae09af02e" kind="function"><name>split</name></member>
+    <member refid="classrealValued_1acafd4dc238e53879fbccf35d25e0176e" kind="function"><name>collect</name></member>
+    <member refid="classrealValued_1ae8b3cc8045c8b37e7a1ab35aa41d820b" kind="function"><name>Strassens_algorithm</name></member>
+    <member refid="classrealValued_1a689a8f76b905b2a137b41ad7d52f4a90" kind="function"><name>Strassen_multiplication</name></member>
+    <member refid="classrealValued_1a33513294526ab1e250aed64a01cd55a6" kind="function"><name>test_time</name></member>
+    <member refid="classrealValued_1a0c52bc84ffa3aaae79eb36f513543860" kind="function"><name>test_time_Strassen</name></member>
+    <member refid="classrealValued_1a5e51bd5e1677aa6751a7f621a6d5223d" kind="function"><name>test</name></member>
+  </compound>
+  <compound refid="namespacechrono" kind="namespace"><name>chrono</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespacestd_1_1chrono" kind="namespace"><name>std::chrono</name>
+  </compound>
+  <compound refid="basic__functions_8h" kind="file"><name>basic_functions.h</name>
+  </compound>
+  <compound refid="Gaus_8cpp" kind="file"><name>Gaus.cpp</name>
+    <member refid="Gaus_8cpp_1aeb1b6d668fec25a5e417544ea6eeb1f4" kind="function"><name>GausInv</name></member>
+    <member refid="Gaus_8cpp_1a603eda32d463c5a0c9c9a34682c60564" kind="function"><name>gausTest</name></member>
+  </compound>
+  <compound refid="Gaus_8h" kind="file"><name>Gaus.h</name>
+    <member refid="Gaus_8h_1aeb1b6d668fec25a5e417544ea6eeb1f4" kind="function"><name>GausInv</name></member>
+    <member refid="Gaus_8h_1a7561cd1508e32598b10bc649efeaa3c5" kind="function"><name>gausTest</name></member>
+  </compound>
+  <compound refid="gloassary_8md" kind="file"><name>gloassary.md</name>
+  </compound>
+  <compound refid="newton_8cpp" kind="file"><name>newton.cpp</name>
+  </compound>
+  <compound refid="newton_8hpp" kind="file"><name>newton.hpp</name>
+  </compound>
+  <compound refid="newton__test_8cpp" kind="file"><name>newton_test.cpp</name>
+    <member refid="newton__test_8cpp_1aa341a019d4762a1d98d0062df35a0bbe" kind="function"><name>displayMatrix</name></member>
+    <member refid="newton__test_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Strassen_8h" kind="file"><name>Strassen.h</name>
+    <member refid="Strassen_8h_1a20a03368e89c9637bc7b5a30c5856fed" kind="function"><name>degrees_two</name></member>
+  </compound>
+  <compound refid="test__for__Strassen_8h" kind="file"><name>test_for_Strassen.h</name>
+    <member refid="test__for__Strassen_8h_1aeb82998035134118253243c39096bcdc" kind="function"><name>examples_tests</name></member>
+  </compound>
+  <compound refid="md_matrix_gloassary" kind="page"><name>md_matrix_gloassary</name>
+  </compound>
+  <compound refid="dir_0f0a80c662d06490e1395bff61b1e8bb" kind="dir"><name>matrix/Gaus</name>
+  </compound>
+  <compound refid="dir_109f68d84cef4a133396a0be144fa9b1" kind="dir"><name>matrix</name>
+  </compound>
+  <compound refid="dir_8126c0230e7a98c98ef605d0a5c93b53" kind="dir"><name>matrix/newton</name>
+  </compound>
+  <compound refid="dir_02e38506ec9ffb6ff52bc6726176b928" kind="dir"><name>matrix/Strassen</name>
+  </compound>
+</doxygenindex>

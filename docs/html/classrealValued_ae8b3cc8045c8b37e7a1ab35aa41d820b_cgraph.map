@@ -1,0 +1,5 @@
+<map id="realValued::Strassens_algorithm" name="realValued::Strassens_algorithm">
+<area shape="rect" id="node1" title="Implements Strassen&#39;s algorithm for multiplying two real&#45;valued matrices. This function uses Strassen..." alt="" coords="5,29,168,71"/>
+<area shape="rect" id="node2" href="$classrealValued.html#acafd4dc238e53879fbccf35d25e0176e" title="Collects 4 submatrices to form a larger matrix. This method takes four realValued matrices (c11,..." alt="" coords="216,11,359,38"/>
+<area shape="rect" id="node3" href="$classrealValued.html#ad8a193a19c754533b609a3bae09af02e" title="Splits a real&#45;valued matrix into four submatrices." alt="" coords="224,62,351,89"/>
+</map>

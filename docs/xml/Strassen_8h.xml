@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Strassen_8h" kind="file" language="C++">
+    <compoundname>Strassen.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="basic__functions_8h" local="yes">../basic_functions.h</includes>
+    <includedby refid="newton_8cpp" local="yes">matrix/newton/newton.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">matrix/Strassen/main.cpp</includedby>
+    <includedby refid="test__for__Strassen_8h" local="yes">matrix/Strassen/test_for_Strassen.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>../basic_functions.h</label>
+        <link refid="basic__functions_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>matrix/Strassen/Strassen.h</label>
+        <link refid="Strassen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>matrix/Strassen/Strassen.h</label>
+        <link refid="Strassen_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>matrix/Strassen/test_for_Strassen.h</label>
+        <link refid="test__for__Strassen_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Strassen_8h_1a20a03368e89c9637bc7b5a30c5856fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t degrees_two</definition>
+        <argsstring>(const size_t &amp;number)</argsstring>
+        <name>degrees_two</name>
+        <param>
+          <type>const size_t &amp;</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>Computes the next power of two greater than or equal to a given number. This function takes a positive integer as input and returns the next power of two greater than or equal to it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number to compute the next power of two of </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: The next power of two greater than or equal to the given number </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/Strassen/Strassen.h" line="68" column="8" bodyfile="matrix/Strassen/Strassen.h" bodystart="68" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../basic_functions.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="20" refid="classrealValued_1ad8a193a19c754533b609a3bae09af02e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrealValued_1ad8a193a19c754533b609a3bae09af02e" kindref="member">realValued::split</ref>(<ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;a1,<sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;a2,<sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;a3,<sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;a4)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>this-&gt;Matrix.size()<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>++i)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a1.Matrix[i].resize(n);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a2.Matrix[i].resize(n);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a3.Matrix[i].resize(n);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>a4.Matrix[i].resize(n);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy(begin(this-&gt;Matrix[i]),<sp/>begin(this-&gt;Matrix[i])<sp/>+<sp/>n,<sp/>begin(a1.Matrix[i]));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy(begin(this-&gt;Matrix[i])<sp/>+<sp/>n,<sp/>end(this-&gt;Matrix[i]),<sp/>begin(a2.Matrix[i]));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy(begin(this-&gt;Matrix[i<sp/>+<sp/>n]),<sp/>begin(this-&gt;Matrix[i<sp/>+<sp/>n])<sp/>+<sp/>n,<sp/>begin(a3.Matrix[i]));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy(begin(this-&gt;Matrix[i<sp/>+<sp/>n])<sp/>+<sp/>n,<sp/>end(this-&gt;Matrix[i<sp/>+<sp/>n]),<sp/>begin(a4.Matrix[i]));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50" refid="classrealValued_1acafd4dc238e53879fbccf35d25e0176e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classrealValued_1acafd4dc238e53879fbccf35d25e0176e" kindref="member">realValued::collect</ref>(<ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;c11,<sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;c12,<sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;c21,<sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>&amp;c22)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>this-&gt;Matrix.size()<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>++i)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy(begin(c11.Matrix[i]),<sp/>end(c11.Matrix[i]),<sp/>begin(this-&gt;Matrix[i]));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy(begin(c12.Matrix[i]),<sp/>end(c12.Matrix[i]),<sp/>begin(this-&gt;Matrix[i])<sp/>+<sp/>n);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy(begin(c21.Matrix[i]),<sp/>end(c21.Matrix[i]),<sp/>begin(this-&gt;Matrix[i<sp/>+<sp/>n]));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copy(begin(c22.Matrix[i]),<sp/>end(c22.Matrix[i]),<sp/>begin(this-&gt;Matrix[i<sp/>+<sp/>n])<sp/>+<sp/>n);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>degrees_two(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>&amp;number)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>d_two<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(number<sp/>&gt;<sp/>d_two)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>d_two<sp/>=<sp/>d_two<sp/>&lt;&lt;<sp/>1;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>d_two;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86" refid="classrealValued_1ae8b3cc8045c8b37e7a1ab35aa41d820b" refkind="member"><highlight class="normal"><ref refid="classrealValued" kindref="compound">realValued</ref><sp/><ref refid="classrealValued_1ae8b3cc8045c8b37e7a1ab35aa41d820b" kindref="member">realValued::Strassens_algorithm</ref>(<ref refid="classrealValued" kindref="compound">realValued</ref><sp/>matrix,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>n)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n<sp/>&lt;=<sp/>64)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;multiplication(matrix));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>n<sp/>=<sp/>n<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>a11(n),<sp/>a12(n),<sp/>a21(n),<sp/>a22(n);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>b11(n),<sp/>b12(n),<sp/>b21(n),<sp/>b22(n);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;split(a11,<sp/>a12,<sp/>a21,<sp/>a22);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>matrix.<ref refid="classrealValued_1ad8a193a19c754533b609a3bae09af02e" kindref="member">split</ref>(b11,<sp/>b12,<sp/>b21,<sp/>b22);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>p1<sp/>=<sp/>(a11.addition(a22)).Strassens_algorithm(b11.addition(b22),<sp/>n);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>p2<sp/>=<sp/>(a21.addition(a22)).Strassens_algorithm(b11,<sp/>n);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>p3<sp/>=<sp/>a11.<ref refid="classrealValued_1ae8b3cc8045c8b37e7a1ab35aa41d820b" kindref="member">Strassens_algorithm</ref>(b22.subtraction(b12),<sp/>n);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>p4<sp/>=<sp/>a22.<ref refid="classrealValued_1ae8b3cc8045c8b37e7a1ab35aa41d820b" kindref="member">Strassens_algorithm</ref>((b11.subtraction(b21)),<sp/>n);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>p5<sp/>=<sp/>(a11.addition(a12)).Strassens_algorithm(b22,<sp/>n);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>p6<sp/>=<sp/>(a11.subtraction(a21)).Strassens_algorithm(b11.addition(b12),<sp/>n);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>p7<sp/>=<sp/>(a22.subtraction(a12)).Strassens_algorithm(b21.addition(b22),<sp/>n);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>c11<sp/>=<sp/>(p1.addition(p4)).addition(p5.subtraction(p7));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>c12<sp/>=<sp/>p3.addition(p5);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>c21<sp/>=<sp/>p2.addition(p4);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>c22<sp/>=<sp/>(p2.subtraction(p1)).addition(p3.addition(p6));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>result(2<sp/>*<sp/>n);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>result.<ref refid="classrealValued_1acafd4dc238e53879fbccf35d25e0176e" kindref="member">collect</ref>(c11,<sp/>c12,<sp/>c21,<sp/>c22);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="classrealValued_1a689a8f76b905b2a137b41ad7d52f4a90" refkind="member"><highlight class="normal"><ref refid="classrealValued" kindref="compound">realValued</ref><sp/><ref refid="classrealValued_1a689a8f76b905b2a137b41ad7d52f4a90" kindref="member">realValued::Strassen_multiplication</ref>(<ref refid="classrealValued" kindref="compound">realValued</ref><sp/>matrix)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(this-&gt;correct_size_for_multiplication(matrix)))</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>runtime_error(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;rows<sp/>&lt;=<sp/>64)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;multiplication(matrix));</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>first_rows<sp/>=<sp/>this-&gt;rows,<sp/>first_columns<sp/>=<sp/>this-&gt;columns,<sp/>second_rows<sp/>=<sp/>matrix.rows,<sp/>second_columns<sp/>=<sp/>matrix.columns;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>new_size<sp/>=<sp/>max(max(first_rows,<sp/>first_columns),<sp/>second_columns);<sp/></highlight><highlight class="comment">//<sp/>first_columns=second_rows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>new_size<sp/>=<sp/>degrees_two(new_size);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;rows<sp/>!=<sp/>new_size<sp/>||<sp/>this-&gt;columns<sp/>!=<sp/>new_size)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;expand(new_size);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matrix.expand(new_size);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>result<sp/>=<sp/>this-&gt;Strassens_algorithm(matrix,<sp/>new_size);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(first_rows<sp/>!=<sp/>new_size)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result.Matrix.resize(first_rows);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(second_columns<sp/>!=<sp/>new_size)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;r<sp/>:<sp/>result.Matrix)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r.resize(second_columns);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="matrix/Strassen/Strassen.h"/>
+  </compounddef>
+</doxygen>

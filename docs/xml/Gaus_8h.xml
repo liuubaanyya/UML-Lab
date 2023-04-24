@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Gaus_8h" kind="file" language="C++">
+    <compoundname>Gaus.h</compoundname>
+    <includes refid="basic__functions_8h" local="yes">../basic_functions.h</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="Gaus_8cpp" local="yes">matrix/Gaus/Gaus.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>../basic_functions.h</label>
+        <link refid="basic__functions_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>matrix/Gaus/Gaus.h</label>
+        <link refid="Gaus_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Gaus_8h_1aeb1b6d668fec25a5e417544ea6eeb1f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classrealValued" kindref="compound">realValued</ref></type>
+        <definition>realValued GausInv</definition>
+        <argsstring>(realValued A)</argsstring>
+        <name>GausInv</name>
+        <param>
+          <type><ref refid="classrealValued" kindref="compound">realValued</ref></type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the inverse of a given real-valued square matrix using Gaussian elimination. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input matrix to be inverted</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: The inverse of the input matrix</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/Gaus/Gaus.h" line="4" column="12" bodyfile="matrix/Gaus/Gaus.cpp" bodystart="15" bodyend="59" declfile="matrix/Gaus/Gaus.h" declline="4" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="Gaus_8h_1a7561cd1508e32598b10bc649efeaa3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gausTest</definition>
+        <argsstring>(int beg=10, int end=1000, int step=10)</argsstring>
+        <name>gausTest</name>
+        <param>
+          <type>int</type>
+          <declname>beg</declname>
+          <defval>10</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end</declname>
+          <defval>1000</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>step</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="matrix/Gaus/Gaus.h" line="5" column="6" bodyfile="matrix/Gaus/Gaus.cpp" bodystart="61" bodyend="95" declfile="matrix/Gaus/Gaus.h" declline="5" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;../basic_functions.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="classrealValued" kindref="compound">realValued</ref><sp/>GausInv(<ref refid="classrealValued" kindref="compound">realValued</ref><sp/>A);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gausTest(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>beg<sp/>=<sp/>10,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>end<sp/>=<sp/>1000,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>step<sp/>=<sp/>10);</highlight></codeline>
+    </programlisting>
+    <location file="matrix/Gaus/Gaus.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_8126c0230e7a98c98ef605d0a5c93b53" kind="dir">
+    <compoundname>matrix/newton</compoundname>
+    <innerfile refid="newton_8cpp">newton.cpp</innerfile>
+    <innerfile refid="newton_8hpp">newton.hpp</innerfile>
+    <innerfile refid="newton__test_8cpp">newton_test.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="matrix/newton/"/>
+  </compounddef>
+</doxygen>

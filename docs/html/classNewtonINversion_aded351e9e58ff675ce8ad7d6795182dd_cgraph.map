@@ -1,0 +1,4 @@
+<map id="NewtonINversion::inverse" name="NewtonINversion::inverse">
+<area shape="rect" id="node1" title="Calculates the inverse of a given real&#45;valued matrix using the iterative method of finding the invers..." alt="" coords="5,13,196,39"/>
+<area shape="rect" id="node2" href="$classrealValued.html#a689a8f76b905b2a137b41ad7d52f4a90" title="Performs matrix multiplication using the Strassen algorithm. This function performs matrix multiplica..." alt="" coords="244,5,399,47"/>
+</map>

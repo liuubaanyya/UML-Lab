@@ -1,0 +1,45 @@
+\hypertarget{classNewtonINversion}{}\doxysection{Newton\+INversion Class Reference}
+\label{classNewtonINversion}\index{NewtonINversion@{NewtonINversion}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrealValued}{real\+Valued}} \mbox{\hyperlink{classNewtonINversion_aded351e9e58ff675ce8ad7d6795182dd}{inverse}} (\mbox{\hyperlink{classrealValued}{real\+Valued}} A, double epsilon)
+\begin{DoxyCompactList}\small\item\em Calculates the inverse of a given real-\/valued matrix using the iterative method of finding the inverse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNewtonINversion_aded351e9e58ff675ce8ad7d6795182dd}\label{classNewtonINversion_aded351e9e58ff675ce8ad7d6795182dd}} 
+\index{NewtonINversion@{NewtonINversion}!inverse@{inverse}}
+\index{inverse@{inverse}!NewtonINversion@{NewtonINversion}}
+\doxysubsubsection{\texorpdfstring{inverse()}{inverse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrealValued}{real\+Valued}} Newton\+INversion\+::inverse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrealValued}{real\+Valued}}}]{A,  }\item[{double}]{epsilon }\end{DoxyParamCaption})}
+
+
+
+Calculates the inverse of a given real-\/valued matrix using the iterative method of finding the inverse. 
+
+The method involves multiplying the input matrix by a scaling factor, then repeatedly using the Strassen algorithm to update the scaling factor until a certain threshold of accuracy is reached.
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The input matrix to be inverted \\
+\hline
+{\em epsilon} & The desired threshold of accuracy for the inverse calculation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: The inverse of the input matrix, or an empty matrix if the input matrix is invalid 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNewtonINversion_aded351e9e58ff675ce8ad7d6795182dd_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+matrix/newton/newton.\+hpp\item 
+matrix/newton/newton.\+cpp\end{DoxyCompactItemize}

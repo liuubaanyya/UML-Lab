@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_0f0a80c662d06490e1395bff61b1e8bb" kind="dir">
+    <compoundname>matrix/Gaus</compoundname>
+    <innerfile refid="Gaus_8cpp">Gaus.cpp</innerfile>
+    <innerfile refid="Gaus_8h">Gaus.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="matrix/Gaus/"/>
+  </compounddef>
+</doxygen>
