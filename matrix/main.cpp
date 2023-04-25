@@ -1,7 +1,6 @@
+
 #include "Gaus/Gaus.h"
 #include "newton/newton.hpp"
-#include "Strassen/Strassen.h"
-#include "Strassen/test_for_Strassen.h"
 
 #include <iostream>
 using namespace std;
@@ -36,29 +35,6 @@ void sendMatrixOptions()
     print("Read from file: 2");
     print("Randomly generated: 3");
 }
-
-realValued giveUserMatrix()
-{
-    sendMatrixOptions();
-    int option;
-    read(option);
-
-    switch (option)
-    {
-    case 1:
-        return readConsoleMatrix();
-        break;
-    case 2:
-        return readFileMatrix();
-
-    case 3:
-        return generateRandom();
-    default:
-        print("Not a correct option");
-        break;
-    }
-}
-
 realValued readConsoleMatrix()
 {
     size_t w, h;
@@ -114,6 +90,30 @@ realValued generateRandom()
     return realValued(w, h);
 }
 
+realValued giveUserMatrix()
+{
+    sendMatrixOptions();
+    int option;
+    read(option);
+
+    switch (option)
+    {
+    case 1:
+        return readConsoleMatrix();
+        break;
+    case 2:
+        return readFileMatrix();
+
+    case 3:
+        return generateRandom();
+    default:
+        print("Not a correct option");
+        return generateRandom();
+        break;
+    }
+    return generateRandom();
+}
+
 int main()
 {
     senMenu();
@@ -127,18 +127,22 @@ int main()
     {
     case 1:
         a = giveUserMatrix();
+        a.print_matrix();
         res = GausInv(a);
         res.print_matrix();
         break;
 
     case 2:
         a = giveUserMatrix();
+        a.print_matrix();
         res = invertor.inverse(a, 0.1);
         res.print_matrix();
         break;
     case 3:
         a = giveUserMatrix();
         b = giveUserMatrix();
+        a.print_matrix();
+        b.print_matrix();
 
         res = a.Strassen_multiplication(b);
         res.print_matrix();

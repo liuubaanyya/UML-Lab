@@ -1,6 +1,8 @@
 #include <vector>
 #include "../basic_functions.h"
 
+#ifndef NEWTON_HPP
+#define NEWTON_HPP
 class NewtonINversion
 {
 public:
@@ -21,3 +23,4 @@ private:
 
     bool isSquare(const realValued &m);
 };
+#endif

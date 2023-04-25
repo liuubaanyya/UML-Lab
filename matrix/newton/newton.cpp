@@ -1,9 +1,8 @@
-#pragma once
+
 
 #include <iostream>
 #include <cfloat>
 #include "newton.hpp"
-#include "../Strassen/Strassen.h"
 
 using namespace std;
 

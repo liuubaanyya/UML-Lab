@@ -2,8 +2,16 @@
 
 #include <vector>
 #include <iostream>
+#include <cassert>
+#include <chrono>
+#include <random>
 
 using namespace std;
+using namespace std::chrono;
+
+#ifndef REAL_MATRIX_H
+#define REAL_MATRIX_H
+
 class realValued
 {
 public:
@@ -150,12 +158,17 @@ public:
 		columns = matrix[0].size();
 	}
 
-	realValued(const size_t &N, const size_t &M, bool randInit = false)
+	realValued(const size_t &N, const size_t &M, bool randInit = true)
 	{
 		vector<vector<double>> matrix;
 		rows = N;
 		columns = M;
 		srand(time(NULL));
+
+		std::random_device rd;
+		std::mt19937 gen(rd());
+
+		std::uniform_int_distribution<> dis(0, 99);
 
 		for (int i = 0; i < this->rows; ++i)
 		{
@@ -163,7 +176,7 @@ public:
 			vector<double> line;
 			for (int j = 0; j < this->columns; ++j)
 			{
-				double number = rand() % 1000 + 1;
+				double number = dis(gen);
 				line.push_back((randInit) ? number : 0);
 			}
 			matrix.push_back(line);
@@ -180,3 +193,5 @@ public:
 	auto test_time_Strassen(const realValued &matrix);
 	void test(const realValued &matrix);
 };
+
+#endif

@@ -1,6 +1,4 @@
 #include "Gaus.h"
-#include <cmath>
-#include <chrono>
 
 /**
  * @brief Calculates the inverse of a given real-valued square matrix using Gaussian elimination.
